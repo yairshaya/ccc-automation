@@ -1,3 +1,4 @@
+/* yair shaya */
 data "aws_availability_zones" "available" {}
 variable "aws_region" {
   default = "us-west-1"
