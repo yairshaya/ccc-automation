@@ -2,6 +2,8 @@ data "aws_availability_zones" "available" {}
 variable "aws_region" {
   default = "us-west-1"
 }
+variable "access_key" {}
+variable "secret_key" {}
 variable "WebCIDR_Block" {}
 variable "PublicCIDR_Block" {}
 variable "MasterS3Bucket" {}
