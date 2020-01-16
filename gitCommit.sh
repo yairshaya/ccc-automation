@@ -10,8 +10,10 @@ VPCCIDR = "10.0.0.0/16"
 ServerKeyName = "yair"
 EOL
 
+gr=/home/yairs/Local-GIT/ccc-automation/
+cd "$gr" || exit
 ### commit the changes to GitHub
-git add .
+git add . -A
 commit="New commit to deploy env for user: $1";
 #read -p "New commit to deploy env for user: $1"
 git commit -m "${commit}"
